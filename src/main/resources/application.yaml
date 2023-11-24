@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/storage_sensor
+    username: admin
+    password: p@ssw0rd
+  jpa:
+    properties:
+      hibernate:
+      jdbc:
+        lob:
+          non_contextual_creation: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: update
+
+app:
+  jwtSecret: labInventMinskBelarus
+  jwtExpirationMs: 86400000
