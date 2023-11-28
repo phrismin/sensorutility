@@ -1,6 +1,4 @@
-package com.jabinvent.sensorutility.model;
-
-import com.jabinvent.sensorutility.entity.Role;
+package com.jabinvent.sensorutility.entity;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -15,7 +13,6 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String username;
     private String password;
 

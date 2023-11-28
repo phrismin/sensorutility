@@ -1,6 +1,6 @@
 package com.jabinvent.sensorutility.service.impl;
 
-import com.jabinvent.sensorutility.model.User;
+import com.jabinvent.sensorutility.entity.User;
 import com.jabinvent.sensorutility.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

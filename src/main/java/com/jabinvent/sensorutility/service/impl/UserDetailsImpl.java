@@ -1,7 +1,7 @@
 package com.jabinvent.sensorutility.service.impl;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.jabinvent.sensorutility.model.User;
+import com.jabinvent.sensorutility.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -30,6 +30,7 @@ public class UserDetailsImpl implements UserDetails {
         List<SimpleGrantedAuthority> authorities = user.getRoles().stream()
                 .map(role -> new SimpleGrantedAuthority(role.getName().name()))
                 .collect(Collectors.toList());
+
         return new UserDetailsImpl(
                 user.getId(),
                 user.getUsername(),

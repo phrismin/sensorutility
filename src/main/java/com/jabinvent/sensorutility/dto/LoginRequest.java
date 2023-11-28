@@ -1,4 +1,4 @@
-package com.jabinvent.sensorutility.pojo;
+package com.jabinvent.sensorutility.dto;
 
 public class LoginRequest {
     private String username;
